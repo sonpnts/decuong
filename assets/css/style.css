@@ -5,10 +5,6 @@
     font-family: Myfont;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 .clear {
     clear: both;
 }
@@ -31,6 +27,26 @@
     margin-left: 7px;
 }
 
+.menu-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #20a0a2;
+    z-index: 10001;
+    display: none;
+}
+
+.menu-scroll ul.menu {
+
+    margin-top: 0 !important;
+    justify-content: center;
+}
+
+.menu-scroll ul.menu>li>a {
+    color: white !important;
+}
+
 #header {
     display: flex;
     /* background: url(https://raw.githubusercontent.com/sonpnts/tuyensinh/f36960ed4b392662c9190330259a552f9271677b/assets/img/doanhoikhoa.jpg)
@@ -41,17 +57,13 @@
     display: flex;
 }
 
-.bold {
-    font-weight: bold;
-}
-
 .v-ali {
     justify-content: center;
 }
 
 .header-menu {
     width: 100%;
-    background-color: #fff;
+    background-color: #eff0ff;
 }
 
 .header-menu>div {
@@ -189,6 +201,188 @@ div.title-content p {
     color: black;
 }
 
+.tabs {
+  display: flex;
+  position: relative;
+}
+.tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  transition: all 0.2s ease;
+}
+.tab-item {
+  min-width: 80px;
+  padding: 16px 20px 11px 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #c23564;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.tab-icon {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
+}
+.tab-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+.tab-item.active {
+  opacity: 1;
+}
+.tab-content {
+  padding: 28px 0;
+}
+.tab-pane {
+  color: #333;
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.tab-pane h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/*  */
+    .tabs {
+  display: flex;
+  position: relative;
+}
+.tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #c23564;
+  transition: all 0.2s ease;
+}
+.tab-item {
+  min-width: 80px;
+  padding: 16px 20px 11px 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #c23564;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid transparent;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.tab-icon {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
+}
+.tab-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+.tab-item.active {
+  opacity: 1;
+}
+.tab-content {
+  padding: 28px 0;
+}
+.tab-pane {
+  color: #333;
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.tab-pane h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+/*  */
+.tabs {
+    display: flex;
+    position: relative;
+}
+
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #2463b6;
+    transition: all 0.2s ease;
+}
+
+.tab-item {
+    min-width: 80px;
+    padding: 16px 20px 11px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #2463b6;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+}
+
+.tab-item:hover {
+    opacity: 1;
+    background-color: rgba(24, 7, 104, 0.05);
+    border-color: rgba(24, 7, 104, 0.1);
+}
+
+.tab-item.active {
+    opacity: 1;
+}
+
+.tab-content {
+    padding: 28px 0;
+}
+
+.tab-pane {
+    color: #333;
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+/*  */
+
 .title-block p {
     font-size: 27px;
     color:antiquewhite;
@@ -287,7 +481,7 @@ form ul {
 
 /*-------------------------------*/
 .footer {
-    background-color: #bd8f8fe6;
+    background-color: #b9bfefe6;
     display: flex;
 }
 
@@ -302,7 +496,7 @@ form ul {
 }
 
 .icon-footer {
-    font-size: 52px;
+    font-size: 31px;
     color: #fff;
 }
 
@@ -381,8 +575,8 @@ form ul {
     43% {
         -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
         animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        -webkit-transform: translate3d(0, -18px, 0) scaleY(1.1);
-        transform: translate3d(0, -18px, 0) scaleY(1.1);
+        -webkit-transform: translate3d(0, -15px, 0) scaleY(1.1);
+        transform: translate3d(0, -15px, 0) scaleY(1.1);
     }
 
     70% {
