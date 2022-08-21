@@ -165,7 +165,7 @@ div.title-content p {
 }
 
 .index {
-    width: 55%;
+    width: 100%;
     background-color: #F9F9F9;
     border: 1px solid #AAAAAA;
     border-radius: 4px;
@@ -200,7 +200,7 @@ div.title-content p {
     text-decoration: none;
     color: black;
 }
-
+/* */
 .tabs {
   display: flex;
   position: relative;
@@ -212,7 +212,7 @@ div.title-content p {
   width: 0;
   height: 6px;
   border-radius: 15px;
-  background-color: #c23564;
+  background-color: #0000FF;
   transition: all 0.2s ease;
 }
 .tab-item {
@@ -220,7 +220,7 @@ div.title-content p {
   padding: 16px 20px 11px 20px;
   font-size: 20px;
   text-align: center;
-  color: #c23564;
+  color: #0000FF;
   background-color: #fff;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -237,14 +237,14 @@ div.title-content p {
 }
 .tab-item:hover {
   opacity: 1;
-  background-color: rgba(194, 53, 100, 0.05);
-  border-color: rgba(194, 53, 100, 0.1);
+  background-color: rgba(198, 226, 255, 0.1);
+  border-color: rgba(198, 226, 255, 0.1);
 }
 .tab-item.active {
   opacity: 1;
 }
 .tab-content {
-  padding: 28px 0;
+  padding: 10px 0;
 }
 .tab-pane {
   color: #333;
@@ -256,130 +256,6 @@ div.title-content p {
 .tab-pane h2 {
   font-size: 24px;
   margin-bottom: 8px;
-}
-
-/*  */
-    .tabs {
-  display: flex;
-  position: relative;
-}
-.tabs .line {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 6px;
-  border-radius: 15px;
-  background-color: #c23564;
-  transition: all 0.2s ease;
-}
-.tab-item {
-  min-width: 80px;
-  padding: 16px 20px 11px 20px;
-  font-size: 20px;
-  text-align: center;
-  color: #c23564;
-  background-color: #fff;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom: 5px solid transparent;
-  opacity: 0.6;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.tab-icon {
-  font-size: 24px;
-  width: 32px;
-  position: relative;
-  top: 2px;
-}
-.tab-item:hover {
-  opacity: 1;
-  background-color: rgba(194, 53, 100, 0.05);
-  border-color: rgba(194, 53, 100, 0.1);
-}
-.tab-item.active {
-  opacity: 1;
-}
-.tab-content {
-  padding: 28px 0;
-}
-.tab-pane {
-  color: #333;
-  display: none;
-}
-.tab-pane.active {
-  display: block;
-}
-.tab-pane h2 {
-  font-size: 24px;
-  margin-bottom: 8px;
-}
-/*  */
-.tabs {
-    display: flex;
-    position: relative;
-}
-
-.tabs .line {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 6px;
-    border-radius: 15px;
-    background-color: #2463b6;
-    transition: all 0.2s ease;
-}
-
-.tab-item {
-    min-width: 80px;
-    padding: 16px 20px 11px 20px;
-    font-size: 20px;
-    text-align: center;
-    color: #2463b6;
-    background-color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom: 5px solid transparent;
-    opacity: 0.6;
-    cursor: pointer;
-    transition: all 0.5s ease;
-}
-
-.tab-icon {
-    font-size: 24px;
-    width: 32px;
-    position: relative;
-    top: 2px;
-}
-
-.tab-item:hover {
-    opacity: 1;
-    background-color: rgba(24, 7, 104, 0.05);
-    border-color: rgba(24, 7, 104, 0.1);
-}
-
-.tab-item.active {
-    opacity: 1;
-}
-
-.tab-content {
-    padding: 28px 0;
-}
-
-.tab-pane {
-    color: #333;
-    display: none;
-}
-
-.tab-pane.active {
-    display: block;
-}
-
-.tab-pane h2 {
-    font-size: 24px;
-    margin-bottom: 8px;
 }
 /*  */
 
@@ -389,11 +265,11 @@ div.title-content p {
     padding: 5px 10px;
     margin-top: 15px;
     margin-bottom: 5px;
-    border: 1px solid linear-gradient(90deg, #0162c8, #55e7fc);
+    border: 1px solid  #0162c8;
     position: relative;
     display: inline-block;
     border-radius: 10px;
-    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    background: #0162c8;
 }
 
 .table-style {
