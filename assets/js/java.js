@@ -48,11 +48,25 @@ $(document).ready(function(){
     });
     $(window).scroll(function(){
         if($(this).scrollTop()){
+            $(".backtop").fadeIn();
+        }else{
+            $(".backtop").fadeOut();
+        }
+    })
+    $(".backtop").click(function(){
+        $('html,body').animate({
+            scrollTop:0
+        },500);
+    });
+    $(window).scroll(function(){
+        if($(this).scrollTop()){
             $(".menu-scroll").fadeIn();
-            $("#header").fadeOut();
         }else{
             $(".menu-scroll").fadeOut();
-            $("#header").fadeIn();
         }
+    })
+    $("#bar").click(function(){
+        $("ul.menu").slideToggle();
+        $(".menu-scroll").hide();
     })
 });

@@ -5,6 +5,15 @@
     font-family: Myfont;
 }
 
+#bar {
+    font-size: 24px;
+    padding: 5px;
+    background-color: #ccc;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+}
+
 .clear {
     clear: both;
 }
@@ -49,8 +58,6 @@
 
 #header {
     display: flex;
-    /* background: url(https://raw.githubusercontent.com/sonpnts/tuyensinh/f36960ed4b392662c9190330259a552f9271677b/assets/img/doanhoikhoa.jpg)
-    center/ cover no-repeat; */
 }
 
 .flex {
@@ -310,8 +317,6 @@ div.title-content p {
     background-color: #FAFAD2;
 }
 
-
-
 .list-align {
     margin: 1em 0 1.5em 0;
     padding-left: 1.5em;
@@ -335,6 +340,10 @@ div.title-content p {
 
 .top-text {
     vertical-align: baseline;
+}
+
+ul.mobile-list {
+    padding-left: 17px;
 }
 
 .regis form {
