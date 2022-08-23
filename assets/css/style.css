@@ -15,6 +15,15 @@
     display: none;
 }
 
+#bar {
+    font-size: 24px;
+    padding: 5px;
+    background-color: #ccc;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+}
+
 .clear {
     clear: both;
 }
